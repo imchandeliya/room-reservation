@@ -1,0 +1,15 @@
+.idea/
+*.class
+target
+*.iml
+*.log
+.DS_Store
+jacoco/
+application-localdev.properties
+application-localtest.properties
+docker/dockerdata
+
+.classpath
+.factorypath
+.project
+.settings/
