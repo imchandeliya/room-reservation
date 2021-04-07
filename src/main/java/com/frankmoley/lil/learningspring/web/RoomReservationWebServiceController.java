@@ -23,7 +23,7 @@ public class RoomReservationWebServiceController {
 
     @GetMapping
     public List<RoomReservation> getRoomReservations(@RequestParam(required = false) String dateStr) {
-        LocalDate date = DateUtils.createDateFromDateString(dateString);
+        LocalDate date = DateUtils.createDateFromDateString(dateStr);
         List<RoomReservation> roomReservations = reservationService.getRoomReservationForDate(date);
         return roomReservations;
     }
